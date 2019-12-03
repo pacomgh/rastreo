@@ -12,96 +12,120 @@
         android:id="@+id/tvReg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/tvReg"
-        android:textColor="@color/text"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="20dp"
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="8dp"
-        android:textSize="18sp"/>
+        android:text="@string/tvReg"
+        android:textColor="@color/text"
+        android:textSize="18sp" />
 
-    <EditText
-        android:id="@+id/etRem"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="text"
-        android:hint="@string/remitente"
-        android:textColorHint="@color/colorAccent"
-        android:backgroundTint="@color/colorAccent"
-        android:textColor="@color/text"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="32dp"/>
-    <EditText
-        android:id="@+id/etCons"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="text"
-        android:hint="@string/consignatario"
-        android:textColorHint="@color/colorAccent"
-        android:backgroundTint="@color/colorAccent"
-        android:textColor="@color/text"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="32dp"/>
-    <EditText
-        android:id="@+id/etGuia"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="text"
-        android:hint="@string/guia"
-        android:textColorHint="@color/colorAccent"
-        android:backgroundTint="@color/colorAccent"
-        android:textColor="@color/text"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="32dp"/>
-    <EditText
-        android:id="@+id/etDest"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="text"
-        android:hint="@string/destinatario"
-        android:textColorHint="@color/colorAccent"
-        android:backgroundTint="@color/colorAccent"
-        android:textColor="@color/text"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="32dp"/>
-    <EditText
-        android:id="@+id/etDate"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="text"
-        android:hint="@string/fecha"
-        android:textColorHint="@color/colorAccent"
-        android:backgroundTint="@color/colorAccent"
-        android:textColor="@color/text"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="32dp"/>
-    <EditText
-        android:id="@+id/etCont"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="text"
-        android:hint="@string/contenido"
-        android:textColorHint="@color/colorAccent"
-        android:backgroundTint="@color/colorAccent"
-        android:textColor="@color/text"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="32dp"/>
+        android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/btnReg"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        android:text="@string/registrar"
-        android:textColor="@color/white"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="32dp"/>
+        <LinearLayout
+            android:id="@+id/llContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/etDepEnvio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:hint="@string/depEnvio"
+                android:inputType="text"
+                android:textColor="@color/text"
+                android:textColorHint="@color/colorAccent" />
+
+            <EditText
+                android:id="@+id/etDepRecibe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:hint="@string/depRecibe"
+                android:inputType="text"
+                android:textColor="@color/text"
+                android:textColorHint="@color/colorAccent" />
+
+            <EditText
+                android:id="@+id/etCiudadEnvio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:hint="@string/ciudadEnvio"
+                android:inputType="text"
+                android:textColor="@color/text"
+                android:textColorHint="@color/colorAccent" />
+
+            <EditText
+                android:id="@+id/etCiudadDest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:hint="@string/ciudadDestino"
+                android:inputType="text"
+                android:textColor="@color/text"
+                android:textColorHint="@color/colorAccent" />
+
+            <EditText
+                android:id="@+id/fechaCreacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:hint="@string/fechaCreacion"
+                android:inputType="date"
+                android:textColor="@color/text"
+                android:textColorHint="@color/colorAccent" />
+
+            <EditText
+                android:id="@+id/etFechaEnvio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:hint="@string/fechaEnvio"
+                android:inputType="date"
+                android:textColor="@color/text"
+                android:textColorHint="@color/colorAccent" />
+
+            <EditText
+                android:id="@+id/etDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:hint="@string/descripcion"
+                android:inputType="textMultiLine"
+                android:textColor="@color/text"
+                android:textColorHint="@color/colorAccent" />
+
+            <Button
+                android:id="@+id/btnReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/registrar"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
 
 </LinearLayout>

@@ -8,12 +8,17 @@
     <string name="add">Agregar</string>
     <string name="search">Buscar</string>
     <string name="tvReg">Registro de nueva valija</string>
-    <string name="remitente">Remitente</string>
-    <string name="consignatario">Consignatarios</string>
-    <string name="guia">Guia</string>
-    <string name="destinatario">Destinatario</string>
-    <string name="fecha">Fecha</string>
-    <string name="contenido">Contenido</string>
+    <!--Datos para el registro de la nueva valija-->
+    <string name="depEnvio">Departamento que envia</string>
+    <string name="depRecibe">Departamento que recibe</string>
+    <string name="fechaCreacion">Fecha de creación de valija</string>
+    <string name="fechaEnvio">Fecha de envío</string>
+    <string name="ciudadDestino">Ciudad de destino</string>
+    <string name="ciudadEnvio">Ciudad de envio</string>
+    <string name="descripcion">Descripcion del paquete</string>
+    <string name="numValija">Número de valija</string>
+    <string name="leon">León</string>
+    <!--Datos para el registro de la nueva valija-->
     <string name="registrar">Registrar</string>
     <string name="searchDato">Ingresa el dato a buscar</string>
 
